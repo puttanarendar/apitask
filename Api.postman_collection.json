@@ -1,0 +1,483 @@
+{
+	"info": {
+		"_postman_id": "81ef4d91-b774-4307-81ea-c3a12188a125",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8189111"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsImlzX2FkbWluIjoiMSIsIkFQSV9USU1FIjoxNjk2MjM5NzMxfQ.MuYjYpKJvdLXjA2jmEmhKatTaH-4bcGEU9ZPVVhOZlg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/app/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "Pavan@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsImlzX2FkbWluIjoiMSIsIkFQSV9USU1FIjoxNjk2MjM4MDUwfQ.fAfb1WA5_SjqNzuDhPoFN4iVtUJFSMs8ITJIU43bbw4",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Examination",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Exam1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "1989-10-25",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1230517880",
+									"type": "text"
+								},
+								{
+									"key": "is_admin",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsImlzX2FkbWluIjoiMSIsIkFQSV9USU1FIjoxNjk2MjQ3Mzk4fQ.kDh0dxghW4f9taP7j_O1X509-J8vdA8yQokH2n4aB5Y",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Test12",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Test1234@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "1989-07-23",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1233160891",
+									"type": "text"
+								},
+								{
+									"key": "is_admin",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsImlzX2FkbWluIjoiMSIsIkFQSV9USU1FIjoxNjk2MjQ4MjIzfQ.WCV5il7buMAR1QCfEpAH_0RKA9g5lI39uYgNcMBdReA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"lokesh\",\n    \"email\" : \"Test123@gmail.com\",\n    \"dob\" : \"1994-10-20\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/app/api/user/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"user",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Group",
+			"item": [
+				{
+					"name": "Add Group",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMyIsInVzZXJuYW1lIjoiUGF2YW4iLCJpc19hZG1pbiI6IjAiLCJBUElfVElNRSI6MTY5NjI1OTg2Mn0.eLJTxZF19yXXF-LP_ElAfDfJ6rwvOC_VHqvtQ7sae9g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test Group",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/group",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Group",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMSIsInVzZXJuYW1lIjoibG9rZXNoIiwiaXNfYWRtaW4iOiIwIiwiQVBJX1RJTUUiOjE2OTYxNzY5NDh9.Kmt8kU9H7is7XS9NT-mBmcuh8pgRAYE753dRUmA9L0Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/app/api/group/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"group",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Group",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMSIsInVzZXJuYW1lIjoibG9rZXNoIiwiaXNfYWRtaW4iOiIwIiwiQVBJX1RJTUUiOjE2OTYyMjA0MTN9.MSBM8JiDWTQJ19P5M5dXq8dTY5gIXtlxn49j68fYycA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "keyword",
+									"value": "B",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/group-search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"group-search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Member",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMSIsInVzZXJuYW1lIjoibG9rZXNoIiwiaXNfYWRtaW4iOiIwIiwiQVBJX1RJTUUiOjE2OTYyMjUwOTl9.NvCt9JFpqLWu5iVkSU6VQIMvJDrK87XGOiJiURrzHRk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "group_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/add-member",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"add-member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMSIsInVzZXJuYW1lIjoibG9rZXNoIiwiaXNfYWRtaW4iOiIwIiwiQVBJX1RJTUUiOjE2OTYyMzUyMDh9.t510qa5tnRP0iW91U78Pj4h6Hj6wJY5uRNof8jutWW4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "group_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Hello",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/send-message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"send-message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Likes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMyIsInVzZXJuYW1lIjoiUGF2YW4iLCJpc19hZG1pbiI6IjAiLCJBUElfVElNRSI6MTY5NjQyMTQ5Nn0.5Hm2wH0xGIxFchIDxGcJaBGGvdeM8OXW_clBf9u1bnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "group_id",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "message_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/app/api/add-like-message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"app",
+								"api",
+								"add-like-message"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
