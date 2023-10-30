@@ -10,7 +10,7 @@ class AuthenticationController extends REST_Controller  {
 		$this->load->model('API/AuthenticationModel','AuthenticationModelObj');
 	}
 	
-	public function login_post() {
+	public function login_post() {	
 		$final_response = [];
 	    try {
 	        // set validation rules
